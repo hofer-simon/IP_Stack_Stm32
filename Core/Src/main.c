@@ -50,7 +50,7 @@ PCD_HandleTypeDef hpcd_USB_OTG_FS;
 osThreadId_t defaultTaskHandle;
 const osThreadAttr_t defaultTask_attributes = {
   .name = "defaultTask",
-  .stack_size = 128 * 4,
+  .stack_size = 2048 * 4,
   .priority = (osPriority_t) osPriorityNormal,
 };
 /* USER CODE BEGIN PV */
@@ -113,6 +113,7 @@ int main(void)
   osKernelInitialize();
 
   /* USER CODE BEGIN RTOS_MUTEX */
+  printf("Hello World\n");
   /* add mutexes, ... */
   /* USER CODE END RTOS_MUTEX */
 
@@ -354,6 +355,10 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+int __io_putchar(int ch) {
+    HAL_UART_Transmit( & huart3, (uint8_t * ) & ch, 1, 0xFFFF);
+    return ch;
+}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -372,6 +377,7 @@ void StartDefaultTask(void *argument)
   for(;;)
   {
     osDelay(1);
+
   }
   /* USER CODE END 5 */
 }

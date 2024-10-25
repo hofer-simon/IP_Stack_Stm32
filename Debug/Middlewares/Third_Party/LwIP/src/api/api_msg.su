@@ -26,3 +26,5 @@
 ../Middlewares/Third_Party/LwIP/src/api/api_msg.c:1813:1:lwip_netconn_do_write	24	static
 ../Middlewares/Third_Party/LwIP/src/api/api_msg.c:1867:1:lwip_netconn_do_getaddr	24	static
 ../Middlewares/Third_Party/LwIP/src/api/api_msg.c:1934:1:lwip_netconn_do_close	24	static
+../Middlewares/Third_Party/LwIP/src/api/api_msg.c:2117:1:lwip_netconn_do_dns_found	32	static
+../Middlewares/Third_Party/LwIP/src/api/api_msg.c:2143:1:lwip_netconn_do_gethostbyname	40	static

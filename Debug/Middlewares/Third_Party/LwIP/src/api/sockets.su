@@ -13,7 +13,7 @@
 ../Middlewares/Third_Party/LwIP/src/api/sockets.c:620:1:lwip_accept	112	static
 ../Middlewares/Third_Party/LwIP/src/api/sockets.c:718:1:lwip_bind	48	static
 ../Middlewares/Third_Party/LwIP/src/api/sockets.c:772:1:lwip_close	32	static
-../Middlewares/Third_Party/LwIP/src/api/sockets.c:813:1:lwip_connect	56	static
+../Middlewares/Third_Party/LwIP/src/api/sockets.c:813:1:lwip_connect	48	static
 ../Middlewares/Third_Party/LwIP/src/api/sockets.c:881:1:lwip_listen	40	static
 ../Middlewares/Third_Party/LwIP/src/api/sockets.c:920:1:lwip_recv_tcp	56	static
 ../Middlewares/Third_Party/LwIP/src/api/sockets.c:1023:1:lwip_sock_make_addr	56	static
